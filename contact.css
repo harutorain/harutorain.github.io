@@ -1,0 +1,104 @@
+/* ボディ全体 */
+body {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+  background: white;
+  color: #333;
+}
+
+/* ヘッダー全体 */
+header {
+  display: flex;
+  align-items: center;         
+  justify-content: space-between; 
+  padding: 1em 4em 1em 1em;
+  background-color: #111;      
+  color: white;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 60px;   
+}
+
+/* ロゴ部分 */
+.logo {
+  margin-right: 2em;
+  font-weight: bold;
+  font-size: 1.8rem;
+  cursor: default;
+  user-select: none;
+}
+
+/* メニューリスト */
+.nav-list {
+  display: flex;
+  gap: 2em; 
+  list-style: none;  
+  margin: 0;
+  padding: 0;
+}
+
+/* メニュー項目リンク */
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* ホバー時の色変化 */
+.nav-list li a:hover {
+  color: #1e90ff; 
+  text-decoration: underline;
+}
+
+
+/* お問い合わせセクション */
+.contact-section {
+  padding: 3em 1em;
+  background-color: white;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* お問い合わせフォーム */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.8em;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #444;
+}
